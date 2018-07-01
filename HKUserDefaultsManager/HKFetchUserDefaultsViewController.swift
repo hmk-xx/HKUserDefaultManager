@@ -18,13 +18,17 @@ class HKFetchUserDefaultsViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     @IBAction func methodFetch(sender: AnyObject) {
+        
         self.methodFetchDetails(stringKey: (self.textFieldKey?.text)!)
     }
     func methodFetchDetails(stringKey:String){
-        let stringFetchResult:String =  UserDefaultsManager.methodForFetchStringObjectValue(stringKey)
-        textViewResult?.text = stringFetchResult
-        self.textFieldKey?.resignFirstResponder()
-        
+        if UserDefaultsManager.isValueInUserDefaults(key: stringKey){
+            let stringFetchResult:String =  UserDefaultsManager.methodForFetchStringObjectValue(stringKey)
+            textViewResult?.text = stringFetchResult
+            self.textFieldKey?.resignFirstResponder()
+        }else{
+            ExceptionHandlerClass.showAlert("Oops", andMessage: "Please check your entered key.", withController: self)
+        }
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

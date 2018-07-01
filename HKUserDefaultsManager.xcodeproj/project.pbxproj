@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		686EAD1520E8B6690025697D /* ExceptionHandlerClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 686EAD1420E8B6690025697D /* ExceptionHandlerClass.swift */; };
 		68FDF8E320E2D127003CE931 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68FDF8E220E2D127003CE931 /* AppDelegate.swift */; };
 		68FDF8E520E2D127003CE931 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68FDF8E420E2D127003CE931 /* ViewController.swift */; };
 		68FDF8E820E2D127003CE931 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68FDF8E620E2D127003CE931 /* Main.storyboard */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		686EAD1420E8B6690025697D /* ExceptionHandlerClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExceptionHandlerClass.swift; sourceTree = "<group>"; };
 		68FDF8DF20E2D127003CE931 /* HKUserDefaultsManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HKUserDefaultsManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		68FDF8E220E2D127003CE931 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		68FDF8E420E2D127003CE931 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 		68FDF8E120E2D127003CE931 /* HKUserDefaultsManager */ = {
 			isa = PBXGroup;
 			children = (
+				686EAD1420E8B6690025697D /* ExceptionHandlerClass.swift */,
 				68FDF91020E2D14D003CE931 /* UserDefaultsManager.swift */,
 				68FDF8E220E2D127003CE931 /* AppDelegate.swift */,
 				68FDF8E420E2D127003CE931 /* ViewController.swift */,
@@ -266,6 +269,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				68FDF8E520E2D127003CE931 /* ViewController.swift in Sources */,
+				686EAD1520E8B6690025697D /* ExceptionHandlerClass.swift in Sources */,
 				68FDF91320E2D2F3003CE931 /* HKSaveUserDefaultViewController.swift in Sources */,
 				68FDF8E320E2D127003CE931 /* AppDelegate.swift in Sources */,
 				68FDF91520E2D6EB003CE931 /* HKFetchUserDefaultsViewController.swift in Sources */,
